@@ -1,11 +1,15 @@
 import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
+  EnvelopeIcon,
   BuildingOffice2Icon,
   CalendarIcon,
   FlagIcon,
   MapIcon,
   SparklesIcon,
+  SwatchIcon,
+  StarIcon,
+  MusicalNoteIcon
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
@@ -13,7 +17,7 @@ import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.webp';
+import heroImage from '../images/599140_20230530174002_1.png';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
@@ -25,7 +29,7 @@ import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
-import profilepic from '../images/profilepic.jpg';
+import profilepic from '../images/selfie-canoe.png';
 import testimonialImage from '../images/testimonial.webp';
 import {
   About,
@@ -44,7 +48,7 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
+  title: 'ReREAact Resume Template',
   description: "Example site built with Tim Baker's react resume template",
 };
 
@@ -69,32 +73,26 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `David Hanus`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
-      </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        Hello! Welcome to my website : )
       </p>
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: '../images/David-J-Hanus_Resume_Web-Developer_2025.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
     },
     {
-      href: `#${SectionId.Contact}`,
-      text: 'Contact',
+      href: `mailto:davidjhanus@gmail.com`,
+      text: 'Email',
       primary: false,
+      Icon: EnvelopeIcon,
     },
   ],
 };
@@ -104,16 +102,17 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I'm a web developer with 10+ years of experience creating custom WordPress sites and web applications. I enjoy all things computer and tech-related. I have a passion for creating, building, and collaborating with others. I currently live in a log cabin with my wife, 2 kids, cats, dog, and rabbits.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Nashville, IN', Icon: MapIcon},
+    {label: 'Age', text: '40', Icon: CalendarIcon},
+    {label: 'Favorite Color:', text: 'Pumpkin Orange', Icon: SwatchIcon},
+    {label: 'Favorite Food:', text: 'Tonkotsu Ramen', Icon: StarIcon},
+    // {label: 'Nationality', text: 'American / Polish', Icon: FlagIcon},
+    {label: 'Interests', text: 'Videogames, hiking, woodworking, banjo', Icon: SparklesIcon},
+    // {label: 'Study', text: 'University of Indiana - Bloomington', Icon: AcademicCapIcon},
+    {label: 'Favorite Music', text: 'Classic Rock', Icon: MusicalNoteIcon},
+    // {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -122,19 +121,23 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Wordpress',
     skills: [
       {
-        name: 'English',
-        level: 10,
+        name: 'PHP',
+        level: 8,
       },
       {
-        name: 'French',
-        level: 4,
+        name: 'MySQL',
+        level: 7,
       },
       {
-        name: 'Spanish',
-        level: 3,
+        name: 'HTML/CSS',
+        level: 9,
+      },
+      {
+        name: 'REST API',
+        level: 7,
       },
     ],
   },
@@ -142,16 +145,20 @@ export const skills: SkillGroup[] = [
     name: 'Frontend development',
     skills: [
       {
-        name: 'React',
-        level: 9,
-      },
-      {
-        name: 'Typescript',
+        name: 'JavaScript',
         level: 7,
       },
       {
-        name: 'GraphQL',
-        level: 6,
+        name: 'Typescript',
+        level: 3,
+      },
+      {
+        name: 'React',
+        level: 3,
+      },
+      {
+        name: 'Tailwind',
+        level: 2,
       },
     ],
   },
@@ -159,33 +166,46 @@ export const skills: SkillGroup[] = [
     name: 'Backend development',
     skills: [
       {
-        name: 'Node.js',
-        level: 8,
+        name: 'CLI',
+        level: 9,
       },
       {
-        name: 'Rust',
+        name: 'Node.js',
         level: 5,
       },
       {
-        name: 'Golang',
+        name: 'Bash',
         level: 4,
       },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Design Apps',
     skills: [
       {
-        name: 'React Native',
-        level: 9,
+        name: 'Photoshop',
+        level: 10,
       },
       {
-        name: 'Flutter',
-        level: 4,
+        name: 'Figma',
+        level: 8,
       },
       {
-        name: 'Swift',
-        level: 3,
+        name: 'Adobe XD',
+        level: 6,
+      },
+    ],
+  },
+  {
+    name: 'Websites',
+    skills: [
+      {
+        name: 'WCAG',
+        level: 10,
+      },
+      {
+        name: 'SEO/GAM',
+        level: 8,
       },
     ],
   },
@@ -263,45 +283,54 @@ export const portfolioItems: PortfolioItem[] = [
   },
 ];
 
-/**
- * Resume section -- TODO: Standardize resume contact format or offer MDX
- */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
+    date: '2008',
+    location: 'Indiana University (Bloomington, IN)',
+    title: 'Bachelor of Fine Arts',
+    content: <p>Graphic Design, Photography, Digital Media, Japanese</p>,
+  }
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: '2023 - 2025',
+    location: 'Technology Advice (Nashville, TN)',
+    title: 'Senior Web Developer',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <ul>
+        <li>- Developing custom Wordpress themes using Gutenberg API and Full-Site Editing (FSE)</li>
+        <li>- Engineering WP plugins to support and enhance the advertising technology for a suite of editorial sites</li>
+        <li>- Coordinating with sysadmins for various devops configurations in support of a CI/CD workflow</li>
+        <li>- Hands-on experience developing components with React and TypeScript</li>
+      </ul>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: '2022 - 2023',
+    location: 'Brandography (Minneapolis, MN)',
+    title: 'Senior Web Developer',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <ul>
+        <li>- Creating custom Wordpress themes from Adobe XD designs for ecommerce B2C and marketing sites</li>
+        <li>- Collaborate with marketing and UX team for optimum performance in SEO and WCAG compliance
+        </li>
+      </ul>
+    ),
+  },
+  {
+    date: '2020 - 2022',
+    location: 'Happy Medium (Des Moines, IA)',
+    title: 'Web Developer',
+    content: (
+      <ul>
+        <li>- Creating pixel-perfect custom Wordpress themes from Figma designs
+        </li>
+        <li>- Developing back-end functions and engineering CMS tools using PHP, MySQL, REST
+        </li>
+        <li>- Integrating various CRMs, API libraries, and third-party tools for marketing and lead generation
+        </li>
+      </ul>
     ),
   },
 ];
@@ -366,8 +395,5 @@ export const contact: ContactSection = {
  */
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];
