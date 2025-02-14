@@ -24,7 +24,7 @@ import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/selfie-canoe.png';
-import testimonialImage from '../images/testimonial.webp';
+import testimonialImage from '../images/bg-pattern-kb.png';
 import {
   About,
   ContactSection,
@@ -42,8 +42,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'ReREAact Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'David J. Hanus - Web Developer (Resume)',
+  description: "A one-page resume website for my web development career.",
 };
 
 /**
@@ -310,13 +310,27 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: '',
-    location: 'To see more work history and skills/experience please see my full resume.',
-    title: '',
+    date: '2016 - 2020',
+    location: 'Blueline Media (Bloomington, IN)',
+    title: 'Web Designer',
     content: (
-      <div></div>
+      <ul>
+        <li>- Led front-end web development using Bootstrap, Sass, JavaScript, and ACF in Wordpress</li>
+        <li>- Created custom boilerplate templates to create responsive, high-performance websites</li>
+        <li>- Collaborated on pre-production activities: sitemap architecture, user experience design, page templates</li>
+        {/* <li>- Developed reusable components and templates to streamline development and improve team efficiency</li> */}
+
+      </ul>
     ),
   },
+  // {
+  //   date: '',
+  //   location: 'To see more work history and skills/experience please see my full resume.',
+  //   title: '',
+  //   content: (
+  //     <div></div>
+  //   ),
+  // },
 ];
 
 /**
@@ -326,19 +340,19 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      name: 'Maren V. (Developer)',
+      text: 'David is a talented, patient, and knowledgeable engineer. He approaches projects with a user-centric perspective and is always ready to jump in to assist anyone. Whenever I need a fresh set of eyes on something, I know I can always ask David! He’s never afraid to take on a challenge or learn something new.',
+      // image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+      name: 'Scott S. (Team Manager)',
+      text: 'I wholeheartedly recommend David for any role that demands strong technical expertise, effective teamwork, and a positive, solutions-focused attitude. His commitment to continuous improvement, both in his craft and his collaboration with others, makes him a remarkable addition to any development team.',
+      // image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
     },
     {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+      name: 'Russell L. (Creative Director)',
+      text: 'David is a first-class developer. He is s a skillful architect of CSS, PHP, Javascript, and makes integrating outside APIs feel seamless. Best of all, David is a fun guy to work with. He is a team player - earnest, good-natured and happy to teach others.',
+      // image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
     },
   ],
 };
@@ -357,18 +371,13 @@ export const contact: ContactSection = {
       href: 'mailto:davidjhanus@gmail.com',
     },
     {
-      type: ContactType.Location,
-      text: 'Indiana, USA',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@djhanus',
-      href: 'https://davidjhanus.me',
+      type: ContactType.LinkedIn,
+      text: '@davidjhanus',
+      href: 'https://www.linkedin.com/in/davidjhanus/',
     },
     {
       type: ContactType.Github,
-      text: 'djhanus',
+      text: '@djhanus',
       href: 'https://github.com/djhanus',
     },
   ],
