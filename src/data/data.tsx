@@ -77,7 +77,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '../images/David-J-Hanus_Resume_Web-Developer_2025.pdf',
+      href: '/RESUME_DavidJHanus_WebDeveloper_2025.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
