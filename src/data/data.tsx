@@ -1,10 +1,7 @@
 import {
-  AcademicCapIcon,
   ArrowDownTrayIcon,
   EnvelopeIcon,
-  BuildingOffice2Icon,
   CalendarIcon,
-  FlagIcon,
   MapIcon,
   SparklesIcon,
   SwatchIcon,
@@ -13,11 +10,8 @@ import {
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/599140_20230530174002_1.png';
+import heroImage from '../images/2xcmtixxa34c1.jpg';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
@@ -73,11 +67,11 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `David Hanus`,
+  name: `David J. Hanus`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Hello! Welcome to my website : )
+        Web Developer, Creative, Problem Solver
       </p>
     </>
   ),
@@ -102,17 +96,14 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I'm a web developer with 10+ years of experience creating custom WordPress sites and web applications. I enjoy all things computer and tech-related. I have a passion for creating, building, and collaborating with others. I currently live in a log cabin with my wife, 2 kids, cats, dog, and rabbits.`,
+  description: `I'm a web developer with 10+ years of experience designing and building custom web applications in Wordpress, now shifting my focus toward full-stack development and software engineering. I have a passion for creating, building, and collaborating with others. I currently live in a log cabin in Indiana that I get to share with my wife, 2 kids, cats, dog, and rabbits.`,
   aboutItems: [
     {label: 'Location', text: 'Nashville, IN', Icon: MapIcon},
     {label: 'Age', text: '40', Icon: CalendarIcon},
-    {label: 'Favorite Color:', text: 'Pumpkin Orange', Icon: SwatchIcon},
-    {label: 'Favorite Food:', text: 'Tonkotsu Ramen', Icon: StarIcon},
-    // {label: 'Nationality', text: 'American / Polish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Videogames, hiking, woodworking, banjo', Icon: SparklesIcon},
-    // {label: 'Study', text: 'University of Indiana - Bloomington', Icon: AcademicCapIcon},
-    {label: 'Favorite Music', text: 'Classic Rock', Icon: MusicalNoteIcon},
-    // {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Favorite Color', text: 'Pumpkin Orange', Icon: SwatchIcon},
+    {label: 'Favorite Food', text: 'Tonkotsu Ramen', Icon: StarIcon},
+    {label: 'Interests', text: 'Videogames, hiking, banjo', Icon: SparklesIcon},
+    {label: 'Favorite Music', text: 'Rock & Roll', Icon: MusicalNoteIcon},
   ],
 };
 
@@ -121,91 +112,78 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Wordpress',
+    name: 'Backend Development',
     skills: [
       {
         name: 'PHP',
-        level: 8,
+        level: 9.1,
       },
       {
         name: 'MySQL',
-        level: 7,
+        level: 8.1,
       },
       {
         name: 'HTML/CSS',
-        level: 9,
+        level: 10,
       },
       {
         name: 'REST API',
-        level: 7,
+        level: 7.8,
       },
     ],
   },
   {
-    name: 'Frontend development',
+    name: 'Frontend Development',
     skills: [
       {
         name: 'JavaScript',
-        level: 7,
+        level: 7.5,
       },
       {
         name: 'Typescript',
-        level: 3,
+        level: 2.25,
       },
       {
         name: 'React',
-        level: 3,
+        level: 1.5,
       },
       {
         name: 'Tailwind',
-        level: 2,
+        level: 3,
       },
     ],
   },
   {
-    name: 'Backend development',
+    name: 'Development & Workflow',
     skills: [
       {
-        name: 'CLI',
+        name: 'Bash/Linux/CLI',
         level: 9,
       },
       {
-        name: 'Node.js',
-        level: 5,
+        name: 'Docker/Lando',
+        level: 6,
       },
       {
-        name: 'Bash',
-        level: 4,
+        name: 'Git',
+        level: 8.25,
       },
     ],
   },
   {
-    name: 'Design Apps',
+    name: 'Design & Prototyping',
     skills: [
       {
-        name: 'Photoshop',
+        name: 'Photoshop/Illustrator',
         level: 10,
       },
       {
         name: 'Figma',
-        level: 8,
+        level: 8.25,
       },
       {
         name: 'Adobe XD',
-        level: 6,
-      },
-    ],
-  },
-  {
-    name: 'Websites',
-    skills: [
-      {
-        name: 'WCAG',
-        level: 10,
-      },
-      {
-        name: 'SEO/GAM',
-        level: 8,
+        level: 5,
       },
     ],
   },
@@ -299,10 +277,11 @@ export const experience: TimelineItem[] = [
     title: 'Senior Web Developer',
     content: (
       <ul>
-        <li>- Developing custom Wordpress themes using Gutenberg API and Full-Site Editing (FSE)</li>
-        <li>- Engineering WP plugins to support and enhance the advertising technology for a suite of editorial sites</li>
-        <li>- Coordinating with sysadmins for various devops configurations in support of a CI/CD workflow</li>
-        <li>- Hands-on experience developing components with React and TypeScript</li>
+        <li>- Developed custom block components with the latest Gutenberg API for Full-Site Editing (FSE)</li>
+        <li>- Built and enhanced WordPress plugins for ad tech, SEO, and CRM integrations</li>
+        <li>- Collaborated on CI/CD pipelines, coordinating devops configurations with sysadmins</li>
+        <li>- Worked with React and TypeScript on headless CMS concepts</li>
+        <li>- Deployed and managed cloud-based solutions using AWS, Docker, and Kubernetes</li>
       </ul>
     ),
   },
@@ -312,9 +291,9 @@ export const experience: TimelineItem[] = [
     title: 'Senior Web Developer',
     content: (
       <ul>
-        <li>- Creating custom Wordpress themes from Adobe XD designs for ecommerce B2C and marketing sites</li>
-        <li>- Collaborate with marketing and UX team for optimum performance in SEO and WCAG compliance
-        </li>
+        <li>- Developed custom WordPress themes from Adobe XD designs for eCommerce and marketing sites</li>
+        <li>- Collaborated with marketing and UX teams to optimize SEO performance and WCAG compliance</li>
+        <li>- Mentored junior developers, fostering team growth, improving workflows, and promoting best practices</li>
       </ul>
     ),
   },
@@ -324,13 +303,18 @@ export const experience: TimelineItem[] = [
     title: 'Web Developer',
     content: (
       <ul>
-        <li>- Creating pixel-perfect custom Wordpress themes from Figma designs
-        </li>
-        <li>- Developing back-end functions and engineering CMS tools using PHP, MySQL, REST
-        </li>
-        <li>- Integrating various CRMs, API libraries, and third-party tools for marketing and lead generation
-        </li>
+        <li>- Created pixel-perfect custom WordPress themes from Figma designs</li>
+        <li>- Built advanced back-end functionality using PHP, AJAX, and REST API</li>
+        <li>- Developed eCommerce solutions and integrated CRMs as business and marketing tools</li>
       </ul>
+    ),
+  },
+  {
+    date: '',
+    location: 'To see more work history and skills/experience please see my full resume.',
+    title: '',
+    content: (
+      <div></div>
     ),
   },
 ];
