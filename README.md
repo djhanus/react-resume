@@ -1,6 +1,6 @@
 # React JS Resume Website Template (modified by DJH)
 
-![ReactJS Resume Website Template](screenshot-launch-v1.0.pngraw=true 'ReactJS Resume Website Template')
+![ReactJS Resume Website Template](https://davidjhanus.me/screenshot-launch-v1.0.png 'ReactJS Resume Website Template')
 
 1. Completely rebuilt with React and full typescript support
 2. Built on the [Next.js](https://nextjs.org/) framework for easy server side rendering/static generation, image optimization, api routes, and deployment
