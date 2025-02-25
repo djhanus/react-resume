@@ -1,4 +1,4 @@
-# React JS Resume Website Template (modified by DJH)
+# React Resume Portfolio Site
 
 ![ReactJS Resume Website Template](screenshot-launch-v1.0.png 'ReactJS Resume Website Template')
 
