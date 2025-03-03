@@ -70,7 +70,7 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Web Developer, Creative, Problem Solver
+        Web Developer, Full Stack Engineer
       </p>
     </>
   ),
@@ -102,7 +102,7 @@ export const aboutData: About = {
     {label: 'Favorite Color', text: 'Pumpkin Orange', Icon: SwatchIcon},
     {label: 'Favorite Food', text: 'Tonkotsu Ramen', Icon: StarIcon},
     {label: 'Interests', text: 'Videogames, hiking, banjo', Icon: SparklesIcon},
-    {label: 'Favorite Music', text: 'Rock & Roll', Icon: MusicalNoteIcon},
+    {label: 'Favorite Music', text: 'Surf Rock', Icon: MusicalNoteIcon},
   ],
 };
 

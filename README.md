@@ -22,9 +22,7 @@
 
 ### Build Deploy
 
-- build
-- compile
-- deploy
+- `yarn build` to export production files to `out/` dir
 
 ## Project Created & Maintained By
 
