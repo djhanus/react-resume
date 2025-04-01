@@ -70,7 +70,7 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Web Developer, Full Stack Engineer
+        Web Developer, Full Stack Engineer, and Software Craftsman
       </p>
     </>
   ),
