@@ -192,15 +192,39 @@ export const skills: SkillGroup[] = [
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
-    {
-    title: 'Software Engineer',
-    description: 'Developed scalable web applications and APIs.',
-    tags: ['JavaScript', 'React', 'Node.js'],
+  {
+    title: 'WP Plugin Shortcode JSON Validation (2025)',
+    description: 'A project focused on validating JSON data within WordPress shortcodes.',
+    tags: ['API Authentication', 'JSON Decode', 'Auth Keys', 'Validating Shortcode Parameters'],
+    details: [
+      'Implemented secure API authentication mechanisms',
+      'Developed JSON decoding and validation logic',
+      'Managed authentication keys for secure data handling',
+      'Validated shortcode parameters to ensure data integrity',
+    ],
   },
   {
-    title: 'UI/UX Designer',
-    description: 'Designed user-friendly interfaces for mobile and web.',
-    tags: ['Figma', 'Adobe XD', 'Prototyping'],
+    title: 'Retail Store Locator (2024)',
+    description: 'A WordPress-based store locator using OpenMap API.',
+    tags: ['OpenMap API', 'MySQL', 'Client Database', 'Search Meta Keys'],
+    details: [
+      'Integrated OpenMap API for geolocation and mapping',
+      'Designed and optimized MySQL database for store data',
+      'Built a client database with advanced search capabilities',
+      'Implemented meta key search for efficient data retrieval',
+    ],
+  },
+  {
+    title: 'WP One-Time Passcode Authentication (2025)',
+    description: 'A WordPress plugin for secure OTP-based authentication.',
+    tags: ['REST API', 'Gutenberg', 'Wordpress Plugin', 'Ajax', 'OTP Auth'],
+    details: [
+      'Developed a REST API for OTP generation and validation',
+      'Built Gutenberg blocks for seamless user interaction',
+      'Created a custom WordPress plugin for OTP authentication',
+      'Utilized Ajax for real-time OTP validation',
+      'Implemented secure OTP authentication mechanisms',
+    ],
   },
 ];
 
