@@ -9,11 +9,11 @@ const Portfolio: FC = memo(() => {
     <Section className="bg-neutral-800" sectionId={SectionId.Portfolio}>
       <div className="flex flex-col items-center gap-y-8">
         <h2 className="text-xl font-bold text-white">Selected Featured Projects Accomplishments</h2>
-        <div className="w-full max-w-3xl flex flex-col gap-y-6">
+        <div className="flex flex-col gap-y-6 w-full max-w-3xl">
           {portfolioItems.map((item, index) => (
             <div
+              className="bg-neutral-900 border border-gray-700 p-4 rounded-lg shadow-md"
               key={index}
-              className="border border-gray-700 rounded-lg p-4 bg-neutral-900 shadow-md"
             >
               <ItemOverlay item={item} />
             </div>
@@ -27,7 +27,7 @@ const Portfolio: FC = memo(() => {
 Portfolio.displayName = 'Portfolio';
 export default Portfolio;
 
-const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {title, tags, description}}) => {
+const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {description, tags, title}}) => {
   return (
     <div className="flex flex-col gap-y-4">
       {/* Title */}
@@ -40,8 +40,8 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {title, tags, descri
       <div className="flex flex-wrap gap-2">
         {tags.map((tag, index) => (
           <span
+            className="bg-blue-500 px-3 py-1 rounded-full text-xs font-medium text-white"
             key={index}
-            className="px-3 py-1 text-xs font-medium text-white bg-blue-500 rounded-full"
           >
             {tag}
           </span>
