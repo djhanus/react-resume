@@ -81,6 +81,7 @@ export interface PortfolioItem {
   description: string;
   tags: string[];
   details: string[];
+  client: string;
 }
 
 /**

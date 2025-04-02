@@ -27,11 +27,14 @@ const Portfolio: FC = memo(() => {
 Portfolio.displayName = 'Portfolio';
 export default Portfolio;
 
-const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {title, tags, description, details}}) => {
+const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {title, tags, description, details, client}}) => {
   return (
     <div className="flex flex-col gap-y-4">
       {/* Title */}
       <h2 className="text-lg font-bold text-white">{title}</h2>
+
+      {/* Client */}
+      <span className="text-sm font-medium text-gray-400 italic">{client}</span>
 
       {/* Description */}
       <p className="text-sm text-gray-300">{description}</p>
