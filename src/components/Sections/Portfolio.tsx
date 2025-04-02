@@ -48,12 +48,12 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {title, tags, descri
       {/* Tags */}
       <div className="flex flex-wrap gap-2">
         {tags.map((tag, index) => (
-          <span
+            <span
+            className="bg-blue-500 font-medium px-3 py-1 rounded-full text-white text-xs"
             key={index}
-            className="px-3 py-1 text-xs font-medium text-white bg-blue-500 rounded-full"
-          >
+            >
             {tag}
-          </span>
+            </span>
         ))}
       </div>
     </div>

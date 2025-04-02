@@ -182,6 +182,30 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
+    title: 'JS Application for Certification Purchases (2025)',
+    description: 'A JavaScript application for managing certification purchases and tracking progress, integrated with a REST API for data handling.',
+    tags: ['JavaScript', 'REST API', 'Frontend Development', 'Certification Tracking'],
+    details: [
+      'Developed a JavaScript application for managing certification purchases and tracking progress',
+      'Integrated with a REST API for data handling and retrieval',
+      'Implemented user-friendly interfaces for tracking certification status and progress',
+      'Ensured data integrity and security through proper API authentication and validation',
+      'Optimized application performance and responsiveness for a seamless user experience',
+    ],
+  },
+  {
+    title: 'Gutenberg Full-Site Editing (FSE) Custom Blocks (2024)',
+    description: 'A series of custom Gutenberg blocks developed for Full-Site Editing in WordPress, enhancing the editing experience and functionality of themes.',
+    tags: ['Gutenberg', 'Full-Site Editing', 'WordPress Plugin Development', 'REST API', 'Component-Based Design'],
+    details: [
+      'Developed custom Gutenberg blocks for Full-Site Editing (FSE) in WordPress',
+      'Enhanced the editing experience with user-friendly interfaces and advanced functionality',
+      'Collaborated with designers to ensure seamless integration of custom blocks into themes',
+      'Utilized the latest WordPress APIs and best practices for plugin development',
+      'Optimized blocks for performance and accessibility, adhering to WCAG standards',
+    ],
+  },
+  {
     title: 'API Endpoint Validation for WordPress Shortcodes (2025)',
     description: 'A project focused on validating JSON response data within WordPress shortcodes.',
     tags: ['API Authentication', 'JSON Decode', 'Auth Keys', 'Validating Shortcode Parameters'],
