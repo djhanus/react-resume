@@ -100,7 +100,7 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Backend Development',
+    name: 'Backend Engineering',
     skills: [
       {
         name: 'PHP',
@@ -115,34 +115,34 @@ export const skills: SkillGroup[] = [
         level: 10,
       },
       {
-        name: 'REST API',
+        name: 'REST API Development',
         level: 7.8,
       },
     ],
   },
   {
-    name: 'Frontend Development',
+    name: 'Frontend Engineering',
     skills: [
       {
         name: 'JavaScript',
         level: 7.5,
       },
       {
-        name: 'Typescript',
-        level: 2.25,
+        name: 'Node.js',
+        level: 5,
       },
       {
-        name: 'React',
-        level: 1.5,
+        name: 'React.js',
+        level: 3.25,
       },
       {
-        name: 'Tailwind',
-        level: 3,
+        name: 'Vue.js',
+        level: 2.5,
       },
     ],
   },
   {
-    name: 'Development & Workflow',
+    name: 'DevOps & Workflow Automation',
     skills: [
       {
         name: 'Bash/Linux/CLI',
@@ -153,25 +153,25 @@ export const skills: SkillGroup[] = [
         level: 6,
       },
       {
-        name: 'Git',
+        name: 'Git Version Control',
         level: 8.25,
       },
     ],
   },
   {
-    name: 'Design & Prototyping',
+    name: 'UI/UX Design & Prototyping',
     skills: [
       {
         name: 'Photoshop/Illustrator',
-        level: 10,
+        level: 9,
       },
       {
         name: 'Figma',
-        level: 8.25,
+        level: 8.5,
       },
       {
         name: 'Adobe XD',
-        level: 5,
+        level: 6.5,
       },
     ],
   },
@@ -182,8 +182,8 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'WP Plugin Shortcode JSON Validation (2025)',
-    description: 'A project focused on validating JSON data within WordPress shortcodes.',
+    title: 'API Endpoint Validation for WordPress Shortcodes (2025)',
+    description: 'A project focused on validating JSON response data within WordPress shortcodes.',
     tags: ['API Authentication', 'JSON Decode', 'Auth Keys', 'Validating Shortcode Parameters'],
     details: [
       'Implemented secure API authentication mechanisms',

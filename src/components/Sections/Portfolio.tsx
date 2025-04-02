@@ -27,7 +27,7 @@ const Portfolio: FC = memo(() => {
 Portfolio.displayName = 'Portfolio';
 export default Portfolio;
 
-const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {description, tags, title}}) => {
+const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {title, tags, description, details}}) => {
   return (
     <div className="flex flex-col gap-y-4">
       {/* Title */}
@@ -36,12 +36,21 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {description, tags, 
       {/* Description */}
       <p className="text-sm text-gray-300">{description}</p>
 
+      {/* Details */}
+      {details && (
+        <ul className="list-disc list-inside text-sm text-gray-400">
+          {details.map((detail, index) => (
+            <li key={index}>{detail}</li>
+          ))}
+        </ul>
+      )}
+
       {/* Tags */}
       <div className="flex flex-wrap gap-2">
         {tags.map((tag, index) => (
           <span
-            className="bg-blue-500 px-3 py-1 rounded-full text-xs font-medium text-white"
             key={index}
+            className="px-3 py-1 text-xs font-medium text-white bg-blue-500 rounded-full"
           >
             {tag}
           </span>

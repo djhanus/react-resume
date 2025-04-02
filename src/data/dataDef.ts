@@ -80,7 +80,7 @@ export interface PortfolioItem {
   title: string;
   description: string;
   tags: string[];
-  details: string[]; // This can be used to render additional details about the portfolio item
+  details: string[];
 }
 
 /**
