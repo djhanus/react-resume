@@ -181,30 +181,6 @@ export const skills: SkillGroup[] = [
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
-  // {
-  //   title: 'Certification Management App with REST API Integration',
-  //   client: 'Doriot Venture Staking - Website (2025)',
-  //   description: 'A JavaScript application for managing certification purchases and tracking progress, integrated with a REST API for data handling.',
-  //   tags: ['JavaScript', 'REST API', 'Frontend Development', 'Certification Tracking'],
-  //   details: [
-  //     'Developed a JavaScript application for managing certification purchases and tracking progress',
-  //     'Integrated with a REST API for data handling and retrieval',
-  //     'Implemented user-friendly interfaces for tracking certification status',
-  //   ],
-  // },
-  // {
-  //   title: 'WordPress Store Locator with OpenMap API',
-  //   client: 'Joiner Construction - Client Site (2024)',
-  //   description: 'A robust WordPress-based store locator application leveraging OpenMap API for geolocation and mapping, designed to enhance user experience and streamline store searches.',
-  //   tags: ['OpenMap API', 'MySQL', 'Client Database', 'Geolocation', 'WordPress Development'],
-  //   details: [
-  //     'Integrated OpenMap API to provide accurate geolocation and interactive mapping functionality',
-  //     'Designed and optimized a MySQL database to efficiently store and retrieve store location data',
-  //     'Implemented advanced meta key search for fast and precise data filtering',
-  //     'Developed a user-friendly interface for seamless navigation and store discovery',
-  //     'Ensured the solution was scalable and optimized for performance across various devices and browsers',
-  //   ],
-  // },
   {
     title: 'One-Time Passcode Authentication Plugin for WordPress',
     client: 'Technology Advice - Client Site (2025)',
@@ -282,6 +258,8 @@ export const education: TimelineItem[] = [
   }
 ];
 
+
+
 export const experience: TimelineItem[] = [
   {
     date: '2023 - 2025',
@@ -335,14 +313,6 @@ export const experience: TimelineItem[] = [
       </ul>
     ),
   },
-  // {
-  //   date: '',
-  //   location: 'To see more work history and skills/experience please see my full resume.',
-  //   title: '',
-  //   content: (
-  //     <div></div>
-  //   ),
-  // },
 ];
 
 /**
