@@ -1,16 +1,16 @@
 import React from 'react';
 
-const Websites: React.FC = () => {
+const Websites: React.FC = React.memo(() => {
     const websites = [
-        { name: 'Doriot', url: 'https://doriot.com', displayUrl: 'doriot.com' },
-        { name: 'Outside Studio', url: 'https://outsidestudio.design', displayUrl: 'outsidestudio.design' },
-        { name: 'The Restaurant HQ', url: 'https://therestauranthq.com', displayUrl: 'therestauranthq.com' },
-        { name: 'Channel Insider', url: 'https://channelinsider.com', displayUrl: 'channelinsider.com' },
-        { name: 'Count the Kicks', url: 'https://countthekicks.org', displayUrl: 'countthekicks.org' },
-        { name: 'Iowa Finance Authority', url: 'https://www.iowafinance.com', displayUrl: 'iowafinance.com' },
-        { name: 'The Art of Education', url: 'https://theartofeducation.edu', displayUrl: 'theartofeducation.edu' },
-        { name: 'Bloom HF', url: 'https://bloomhf.org/', displayUrl: 'bloomhf.org' },
-        { name: 'Sycamore Land Trust', url: 'https://sycamorelandtrust.org/', displayUrl: 'sycamorelandtrust.org' },
+        {name: 'Doriot', url: 'https://doriot.com', displayUrl: 'doriot.com'},
+        {name: 'Outside Studio', url: 'https://outsidestudio.design', displayUrl: 'outsidestudio.design'},
+        {name: 'The Restaurant HQ', url: 'https://therestauranthq.com', displayUrl: 'therestauranthq.com'},
+        {name: 'Channel Insider', url: 'https://channelinsider.com', displayUrl: 'channelinsider.com'},
+        {name: 'Count the Kicks', url: 'https://countthekicks.org', displayUrl: 'countthekicks.org'},
+        {name: 'Iowa Finance Authority', url: 'https://www.iowafinance.com', displayUrl: 'iowafinance.com'},
+        {name: 'The Art of Education', url: 'https://theartofeducation.edu', displayUrl: 'theartofeducation.edu'},
+        {name: 'Bloom HF', url: 'https://bloomhf.org/', displayUrl: 'bloomhf.org'},
+        {name: 'Sycamore Land Trust', url: 'https://sycamorelandtrust.org/', displayUrl: 'sycamorelandtrust.org'},
     ];
 
     return (
@@ -24,12 +24,12 @@ const Websites: React.FC = () => {
                 </p>
                 <ul className="space-y-4 text-center">
                 {websites.map((website, index) => (
-                <li key={index} className="leading-tight">
+                <li className="leading-tight" key={index}>
                     <a
-                    href={website.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="text-blue-400 hover:underline text-lg font-medium font-sans"
+                    href={website.url}
+                    rel="noopener noreferrer"
+                    target="_blank"
                     >
                     {website.displayUrl}
                     </a>
@@ -40,6 +40,6 @@ const Websites: React.FC = () => {
             </div>
         </section>
     );
-};
+});
 
-export default Websites;
+export default React.memo(Websites);

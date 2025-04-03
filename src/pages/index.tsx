@@ -7,9 +7,9 @@ import About from '../components/Sections/About';
 import Footer from '../components/Sections/Footer';
 import Hero from '../components/Sections/Hero';
 import Portfolio from '../components/Sections/Portfolio';
-import Websites from '../components/Sections/Websites';
 import Resume from '../components/Sections/Resume';
 import Testimonials from '../components/Sections/Testimonials';
+import Websites from '../components/Sections/Websites';
 import {homePageMeta} from '../data/data';
 
 // eslint-disable-next-line react-memo/require-memo
