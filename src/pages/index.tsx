@@ -1,3 +1,4 @@
+import {Analytics} from "@vercel/analytics/react"
 import dynamic from 'next/dynamic';
 import {FC, memo} from 'react';
 
@@ -11,7 +12,6 @@ import Resume from '../components/Sections/Resume';
 import Testimonials from '../components/Sections/Testimonials';
 import Websites from '../components/Sections/Websites';
 import {homePageMeta} from '../data/data';
-import { Analytics } from "@vercel/analytics/react"
 
 // eslint-disable-next-line react-memo/require-memo
 const Header = dynamic(() => import('../components/Sections/Header'), {ssr: false});
