@@ -181,30 +181,30 @@ export const skills: SkillGroup[] = [
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
-  {
-    title: 'Certification Management App with REST API Integration',
-    client: 'Doriot Venture Staking - Website (2025)',
-    description: 'A JavaScript application for managing certification purchases and tracking progress, integrated with a REST API for data handling.',
-    tags: ['JavaScript', 'REST API', 'Frontend Development', 'Certification Tracking'],
-    details: [
-      'Developed a JavaScript application for managing certification purchases and tracking progress',
-      'Integrated with a REST API for data handling and retrieval',
-      'Implemented user-friendly interfaces for tracking certification status',
-    ],
-  },
-  {
-    title: 'WordPress Store Locator with OpenMap API',
-    client: 'Joiner Construction - Client Site (2024)',
-    description: 'A robust WordPress-based store locator application leveraging OpenMap API for geolocation and mapping, designed to enhance user experience and streamline store searches.',
-    tags: ['OpenMap API', 'MySQL', 'Client Database', 'Geolocation', 'WordPress Development'],
-    details: [
-      'Integrated OpenMap API to provide accurate geolocation and interactive mapping functionality',
-      'Designed and optimized a MySQL database to efficiently store and retrieve store location data',
-      'Implemented advanced meta key search for fast and precise data filtering',
-      'Developed a user-friendly interface for seamless navigation and store discovery',
-      'Ensured the solution was scalable and optimized for performance across various devices and browsers',
-    ],
-  },
+  // {
+  //   title: 'Certification Management App with REST API Integration',
+  //   client: 'Doriot Venture Staking - Website (2025)',
+  //   description: 'A JavaScript application for managing certification purchases and tracking progress, integrated with a REST API for data handling.',
+  //   tags: ['JavaScript', 'REST API', 'Frontend Development', 'Certification Tracking'],
+  //   details: [
+  //     'Developed a JavaScript application for managing certification purchases and tracking progress',
+  //     'Integrated with a REST API for data handling and retrieval',
+  //     'Implemented user-friendly interfaces for tracking certification status',
+  //   ],
+  // },
+  // {
+  //   title: 'WordPress Store Locator with OpenMap API',
+  //   client: 'Joiner Construction - Client Site (2024)',
+  //   description: 'A robust WordPress-based store locator application leveraging OpenMap API for geolocation and mapping, designed to enhance user experience and streamline store searches.',
+  //   tags: ['OpenMap API', 'MySQL', 'Client Database', 'Geolocation', 'WordPress Development'],
+  //   details: [
+  //     'Integrated OpenMap API to provide accurate geolocation and interactive mapping functionality',
+  //     'Designed and optimized a MySQL database to efficiently store and retrieve store location data',
+  //     'Implemented advanced meta key search for fast and precise data filtering',
+  //     'Developed a user-friendly interface for seamless navigation and store discovery',
+  //     'Ensured the solution was scalable and optimized for performance across various devices and browsers',
+  //   ],
+  // },
   {
     title: 'One-Time Passcode Authentication Plugin for WordPress',
     client: 'Technology Advice - Client Site (2025)',
@@ -214,6 +214,19 @@ export const portfolioItems: PortfolioItem[] = [
       'Developed a REST API for OTP generation and validation',
       'Built Gutenberg blocks for seamless user interaction',
       'Created a custom WordPress plugin for OTP authentication',
+    ],
+  },
+  {
+    title: 'Restaurant HQ WordPress Website Redesign into Gutenberg',
+    client: 'Restaurant HQ - https://www.therestauranthq.com',
+    description: 'Redesigned the Restaurant HQ website using the latest WordPress Gutenberg API, focusing on component-based patterns and atomic design principles.',
+    tags: ['Gutenberg API', 'REST API', 'WordPress Compliance', 'SEO', 'Figma'],
+    details: [
+      'Translated Figma designs into a fully responsive WordPress website',
+      'Implemented component-based patterns on an atomic design scale',
+      'Ensured compliance with the latest WordPress standards and SEO best practices',
+      'Integrated Google ad tracking and analytics tools for performance monitoring',
+      'Structured user roles and enhanced CMS UX with custom publish date, author meta, and post meta features',
     ],
   },
   {
@@ -232,19 +245,6 @@ export const portfolioItems: PortfolioItem[] = [
     ],
   },
   {
-    title: 'Restaurant HQ WordPress Website Redesign into Gutenberg',
-    client: 'Restaurant HQ - https://www.therestauranthq.com',
-    description: 'Redesigned the Restaurant HQ website using the latest WordPress Gutenberg API, focusing on component-based patterns and atomic design principles.',
-    tags: ['Gutenberg API', 'REST API', 'WordPress Compliance', 'SEO', 'Figma'],
-    details: [
-      'Translated Figma designs into a fully responsive WordPress website',
-      'Implemented component-based patterns on an atomic design scale',
-      'Ensured compliance with the latest WordPress standards and SEO best practices',
-      'Integrated Google ad tracking and analytics tools for performance monitoring',
-      'Structured user roles and enhanced CMS UX with custom publish date, author meta, and post meta features',
-    ],
-  },
-  {
     title: 'Promotional WordPress Site for Non-Profit Organization',
     client: 'Bloomington Health Foundation - https://bloomhf.org',
     description: 'Designed and developed a vibrant WordPress site for a health-focused non-profit, featuring modular components and a seamless donation experience.',
@@ -258,7 +258,7 @@ export const portfolioItems: PortfolioItem[] = [
     ],
   },
   {
-    title: 'Custom eCommerce System for Women’s Health',
+    title: 'Women Health',
     client: 'Count the Kicks - https://countthekicks.org',
     description: 'A comprehensive digital solution for a non-profit organization focused on women’s health and early pregnancy education, featuring a custom eCommerce system and vibrant branding.',
     tags: ['Digital App', 'eCommerce', 'Non-Profit', 'Responsive Design', 'Branding'],
