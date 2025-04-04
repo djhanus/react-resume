@@ -79,6 +79,7 @@ export interface SkillGroup {
 export interface PortfolioItem {
   title: string;
   description: string;
+  website: string;
   tags: string[];
   details: string[];
   client: string;

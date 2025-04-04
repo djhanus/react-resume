@@ -11,7 +11,7 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/bg-pattern-kb.png';
-import testimonialImage from '../images/bg-pattern-kb.png';
+import testimonialImage from '../images/landscape-sunset.jpg';
 import profilepic from '../images/selfie-canoe.png';
 import {
   About,
@@ -84,7 +84,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I'm a web developer with 10+ years of experience designing and building custom web applications in Wordpress, now shifting my focus toward full-stack development and software engineering. I have a passion for creating, building, and collaborating with others. I currently live in a log cabin in Indiana that I get to share with my wife, 2 kids, cats, dog, and rabbits.`,
+  description: `I'm a web developer with 10+ years of experience designing and building custom web applications using the LAMP stack in Wordpress and other similar CMS platforms. Recently, I've been focusing on front-end development with modern JavaScript frameworks like React and Next.js, as well as expanding my expertise in full-stack development and software engineering. I have a passion for creating, building, and collaborating with others. I currently live in a log cabin in Indiana that I get to share with my wife, 2 kids, cats, dog, and rabbits.`,
   aboutItems: [
     {label: 'Location', text: 'Nashville, IN', Icon: MapIcon},
     {label: 'Age', text: '40', Icon: CalendarIcon},
@@ -115,7 +115,7 @@ export const skills: SkillGroup[] = [
         level: 10,
       },
       {
-        name: 'REST API Development',
+        name: 'REST API',
         level: 7.8,
       },
     ],
@@ -132,12 +132,12 @@ export const skills: SkillGroup[] = [
         level: 6,
       },
       {
-        name: 'React.js',
-        level: 3.5,
+        name: 'React.js/Next.js',
+        level: 3.75,
       },
       {
-        name: 'Next.js',
-        level: 2.25,
+        name: 'Tailwind CSS',
+        level: 2.75,
       },
     ],
   },
@@ -182,20 +182,10 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'One-Time Passcode Plugin for WordPress',
-    client: 'Technology Advice - TechRepublic.com (2025)',
-    description: 'A WordPress plugin for secure OTP-based authentication.',
-    tags: ['WordPress Plugin', 'OTP Auth'],
-    details: [
-      'Developed a solution for secure one-time passcode (OTP) authentication in WordPress',
-      'Prevented fradulent access by implementing a secure OTP system',
-      'Integrated with existing WordPress user management and login systems',
-    ],
-  },
-  {
-    title: 'Website Redesign into Wordpress Gutenberg Blocks',
-    client: 'Restaurant HQ - https://www.therestauranthq.com',
-    description: 'Redesigned a website using the latest WordPress Gutenberg API, focusing on component-based patterns and atomic design principles.',
+    title: 'Restaraunt Website Redesign into Gutenberg Blocks',
+    client: 'Technology Advice (2024)',
+    website: 'https://www.therestauranthq.com',
+    description: 'Redesigned a restaraunt website using the latest WordPress Gutenberg API, focusing on component-based patterns and atomic design principles.',
     tags: ['Website Redesign', 'Gutenberg API'],
     details: [
       'Translated Figma designs into a fully responsive WordPress website',
@@ -205,7 +195,8 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Modern Redesign for Conservation Organization',
-    client: 'Sycamore Land Trust - https://sycamorelandtrust.org',
+    client: 'Sycamore Land Trust (2019)',
+    website: 'https://sycamorelandtrust.org',
     description: 'A complete redesign of a website, featuring a modern WordPress CMS, full-width responsive design, and a focus on driving donations.',
     tags: ['Website Redesign', 'Wordpress CMS'],
     details: [
@@ -215,19 +206,9 @@ export const portfolioItems: PortfolioItem[] = [
     ],
   },
   {
-    title: 'Website Design for Community Non-Profit Organization',
-    client: 'Bloomington Health Foundation - https://bloomhf.org',
-    description: 'Designed and developed a vibrant WordPress site for a health-focused non-profit, featuring modular components and a seamless donation experience.',
-    tags: ['Website Redesign', 'Front-End Development'],
-    details: [
-      'Created a colorful and engaging design aligned with the organization’s branding and mission',
-      'Implemented a secure and user-friendly donation feature to support fundraising efforts',
-      'Collaborated closely with stakeholders to ensure the site effectively communicated the organization’s goals and services',
-    ],
-  },
-  {
     title: 'Educational Website for Womens Health Non-Profit',
-    client: 'Count the Kicks - https://countthekicks.org',
+    client: 'Count the Kicks (2022)',
+    website: 'https://countthekicks.org',
     description: 'A comprehensive digital solution for a non-profit organization focused on women’s health and early pregnancy education, featuring a custom eCommerce system and vibrant branding.',
     tags: ['Website Design', 'eCommerce'],
     details: [
@@ -235,6 +216,45 @@ export const portfolioItems: PortfolioItem[] = [
       'Designed and implemented a custom eCommerce system for promotional items and merchandise',
       'Integrated component-based design principles to align with the organization’s branding and mission',
       'Collaborated with stakeholders to ensure the solution effectively communicated the organization’s goals and values',
+    ],
+  },
+  {
+    title: 'One-Time Passcode Plugin for WordPress',
+    client: 'Technology Advice (2024)',
+    website: 'https://techrepublic.com',
+    description: 'A WordPress plugin for secure OTP-based authentication.',
+    tags: ['WordPress Plugin', 'OTP Auth'],
+    details: [
+      'Developed a solution for secure one-time passcode (OTP) authentication in WordPress',
+      'Prevented fradulent access by implementing a secure OTP system',
+      'Integrated with existing WordPress user management and login systems',
+    ],
+  },
+  {
+    title: 'Website Migration for National Magazine',
+    client: 'American Libraries Magazine (2018)',
+    website: 'https://americanlibrariesmagazine.org',
+    description: 'A website migration project for a nationally recognized magazine publication.',
+    tags: ['Linux Web Hosting', 'Data Migration', 'MySQL'],
+    details: [
+      'Set up Linux-based hosting with CentOS on a dedicated server',
+      'Configured Cloudflare WAF firewall for enhanced security and traffic routing',
+      'Established a maintenance and backup routine for data integrity',
+      'Migrated years of publication data to a MySQL database',
+      'Maintained all SEO, analytics, and traffic connections during the migration',
+      'Improved hosting performance, resulting in significant cost savings',
+    ],
+  },
+  {
+    title: 'Website Design for Community Non-Profit Organization',
+    client: 'Bloomington Health Foundation (2018)',
+    website: 'https://bloomhf.org',
+    description: 'Designed and developed a vibrant WordPress site for a health-focused non-profit, featuring modular components and a seamless donation experience.',
+    tags: ['Website Redesign', 'Front-End Development'],
+    details: [
+      'Created a colorful and engaging design aligned with the organization’s branding and mission',
+      'Implemented a secure and user-friendly donation feature to support fundraising efforts',
+      'Collaborated closely with stakeholders to ensure the site effectively communicated the organization’s goals and services',
     ],
   },
 ];
