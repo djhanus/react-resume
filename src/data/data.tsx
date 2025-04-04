@@ -194,18 +194,6 @@ export const portfolioItems: PortfolioItem[] = [
     ],
   },
   {
-    title: 'Modern Redesign for Conservation Organization',
-    client: 'Sycamore Land Trust (2019)',
-    website: 'https://sycamorelandtrust.org',
-    description: 'A complete redesign of a website, featuring a modern WordPress CMS, full-width responsive design, and a focus on driving donations.',
-    tags: ['Website Redesign', 'Wordpress CMS'],
-    details: [
-      'Developed a brand-new WordPress CMS with a modern, full-width responsive design',
-      'Built a parks and nature trails index with an interactive map and detailed information for each location',
-      'Optimized the site to drive visitors to the donations page, aligning with the organization’s mission',
-    ],
-  },
-  {
     title: 'Educational Website for Womens Health Non-Profit',
     client: 'Count the Kicks (2022)',
     website: 'https://countthekicks.org',
@@ -216,6 +204,18 @@ export const portfolioItems: PortfolioItem[] = [
       'Designed and implemented a custom eCommerce system for promotional items and merchandise',
       'Integrated component-based design principles to align with the organization’s branding and mission',
       'Collaborated with stakeholders to ensure the solution effectively communicated the organization’s goals and values',
+    ],
+  },
+  {
+    title: 'Modern Redesign for Conservation Organization',
+    client: 'Sycamore Land Trust (2019)',
+    website: 'https://sycamorelandtrust.org',
+    description: 'A complete redesign of a website, featuring a modern WordPress CMS, full-width responsive design, and a focus on driving donations.',
+    tags: ['Website Redesign', 'Wordpress CMS'],
+    details: [
+      'Developed a brand-new WordPress CMS with a modern, full-width responsive design',
+      'Built a parks and nature trails index with an interactive map and detailed information for each location',
+      'Optimized the site to drive visitors to the donations page, aligning with the organization’s mission',
     ],
   },
   {
@@ -312,14 +312,25 @@ export const experience: TimelineItem[] = [
   {
     date: '2016 - 2020',
     location: 'Blueline Media (Bloomington, IN)',
-    title: 'Web Designer',
+    title: 'Web Developer',
     content: (
       <ul>
         <li>- Led front-end web development using Bootstrap, Sass, JavaScript, and ACF in Wordpress</li>
         <li>- Created custom boilerplate templates to create responsive, high-performance websites</li>
         <li>- Collaborated on pre-production activities: sitemap architecture, user experience design, page templates</li>
         {/* <li>- Developed reusable components and templates to streamline development and improve team efficiency</li> */}
-
+      </ul>
+    ),
+  },
+  {
+    date: '2010 - 2015',
+    location: 'Sparkfactor (Chicago, IL)',
+    title: 'Web Designer',
+    content: (
+      <ul>
+        <li>- Front-end developer for WordPress using Divi, Elementor, and advanced theme building tools</li>
+        <li>- Extensive collaboration with designers and creative director on web design projects</li>
+        <li>- Assisted in the development of interactive prototypes and user interface designs</li>
       </ul>
     ),
   },
