@@ -8,7 +8,7 @@ const Portfolio: FC = memo(() => {
   return (
     <Section className="bg-neutral-800" sectionId={SectionId.Portfolio}>
       <div className="flex flex-col items-center gap-y-8">
-        <h2 className="text-xl font-bold text-white">Highlighted Projects and Achievements</h2>
+        <h2 className="text-3xl font-bold text-white">Featured Projects</h2>
         <div className="flex flex-col gap-y-6 w-full max-w-3xl">
           {portfolioItems.map((item, index) => (
             <div
@@ -29,9 +29,9 @@ export default Portfolio;
 
 const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {title, tags, description, details, client}}) => {
   return (
-    <div className="flex flex-col gap-y-4">
+    <div className="flex flex-col gap-y-4 p-4">
       {/* Title */}
-      <h2 className="text-lg font-bold text-white">{title}</h2>
+      <h2 className="text-2xl font-bold text-white">{title}</h2>
 
       {/* Client */}
       <span className="text-sm font-medium text-gray-400 italic">{client}</span>

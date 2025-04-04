@@ -10,7 +10,7 @@ import {
 
 import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import heroImage from '../images/2xcmtixxa34c1.jpg';
+import heroImage from '../images/bg-pattern-kb.png';
 import testimonialImage from '../images/bg-pattern-kb.png';
 import profilepic from '../images/selfie-canoe.png';
 import {
@@ -89,9 +89,9 @@ export const aboutData: About = {
     {label: 'Location', text: 'Nashville, IN', Icon: MapIcon},
     {label: 'Age', text: '40', Icon: CalendarIcon},
     {label: 'Favorite Color', text: 'Pumpkin Orange', Icon: SwatchIcon},
-    {label: 'Favorite Food', text: 'Tonkotsu Ramen', Icon: StarIcon},
+    {label: 'Favorite Food', text: 'Ramen', Icon: StarIcon},
     {label: 'Interests', text: 'Videogames, hiking, banjo', Icon: SparklesIcon},
-    {label: 'Favorite Music', text: 'Surf Rock', Icon: MusicalNoteIcon},
+    {label: 'Favorite Music', text: 'Yacht Rock', Icon: MusicalNoteIcon},
   ],
 };
 
@@ -125,19 +125,19 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'JavaScript',
-        level: 7.5,
+        level: 7.75,
       },
       {
         name: 'Node.js',
-        level: 5,
+        level: 6,
       },
       {
         name: 'React.js',
-        level: 3.25,
+        level: 3.5,
       },
       {
-        name: 'Vue.js',
-        level: 2.5,
+        name: 'Next.js',
+        level: 2.25,
       },
     ],
   },
@@ -182,68 +182,58 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'One-Time Passcode Authentication Plugin for WordPress',
-    client: 'Technology Advice - Client Site (2025)',
+    title: 'One-Time Passcode Plugin for WordPress',
+    client: 'Technology Advice - TechRepublic.com (2025)',
     description: 'A WordPress plugin for secure OTP-based authentication.',
-    tags: ['REST API', 'Gutenberg', 'WordPress Plugin', 'OTP Auth'],
+    tags: ['WordPress Plugin', 'OTP Auth'],
     details: [
-      'Developed a REST API for OTP generation and validation',
-      'Built Gutenberg blocks for seamless user interaction',
-      'Created a custom WordPress plugin for OTP authentication',
+      'Developed a solution for secure one-time passcode (OTP) authentication in WordPress',
+      'Prevented fradulent access by implementing a secure OTP system',
+      'Integrated with existing WordPress user management and login systems',
     ],
   },
   {
-    title: 'Restaurant HQ WordPress Website Redesign into Gutenberg',
+    title: 'Website Redesign into Wordpress Gutenberg Blocks',
     client: 'Restaurant HQ - https://www.therestauranthq.com',
-    description: 'Redesigned the Restaurant HQ website using the latest WordPress Gutenberg API, focusing on component-based patterns and atomic design principles.',
-    tags: ['Gutenberg API', 'REST API', 'WordPress Compliance', 'SEO', 'Figma'],
+    description: 'Redesigned a website using the latest WordPress Gutenberg API, focusing on component-based patterns and atomic design principles.',
+    tags: ['Website Redesign', 'Gutenberg API'],
     details: [
       'Translated Figma designs into a fully responsive WordPress website',
       'Implemented component-based patterns on an atomic design scale',
-      'Ensured compliance with the latest WordPress standards and SEO best practices',
       'Integrated Google ad tracking and analytics tools for performance monitoring',
-      'Structured user roles and enhanced CMS UX with custom publish date, author meta, and post meta features',
     ],
   },
   {
-    title: 'Modern WordPress Redesign for Conservation Organization',
+    title: 'Modern Redesign for Conservation Organization',
     client: 'Sycamore Land Trust - https://sycamorelandtrust.org',
-    description: 'A complete redesign of the Sycamore Land Trust website, featuring a modern WordPress CMS, full-width responsive design, and a focus on driving donations.',
-    tags: ['WordPress Development', 'Responsive Design', 'Membership Portal', 'Donations', 'Parks & Trails Index'],
+    description: 'A complete redesign of a website, featuring a modern WordPress CMS, full-width responsive design, and a focus on driving donations.',
+    tags: ['Website Redesign', 'Wordpress CMS'],
     details: [
       'Developed a brand-new WordPress CMS with a modern, full-width responsive design',
-      'Created a visually appealing layout with custom graphics using Photoshop and Illustrator',
-      'Implemented a membership portal for members to access exclusive content and updates',
-      'Designed a news and events section to keep visitors informed about the organization’s activities',
       'Built a parks and nature trails index with an interactive map and detailed information for each location',
       'Optimized the site to drive visitors to the donations page, aligning with the organization’s mission',
-      'Utilized WordPress, CSS, JavaScript, and PHP to deliver a seamless and engaging user experience',
     ],
   },
   {
-    title: 'Promotional WordPress Site for Non-Profit Organization',
+    title: 'Website Design for Community Non-Profit Organization',
     client: 'Bloomington Health Foundation - https://bloomhf.org',
     description: 'Designed and developed a vibrant WordPress site for a health-focused non-profit, featuring modular components and a seamless donation experience.',
-    tags: ['WordPress Development', 'Non-Profit', 'Responsive Design', 'Donations', 'Branding'],
+    tags: ['Website Redesign', 'Front-End Development'],
     details: [
       'Created a colorful and engaging design aligned with the organization’s branding and mission',
-      'Developed reusable modular components to streamline content updates and ensure design consistency',
       'Implemented a secure and user-friendly donation feature to support fundraising efforts',
-      'Optimized the site for performance and accessibility to reach a broad audience',
       'Collaborated closely with stakeholders to ensure the site effectively communicated the organization’s goals and services',
     ],
   },
   {
-    title: 'Women Health',
+    title: 'Educational Website for Womens Health Non-Profit',
     client: 'Count the Kicks - https://countthekicks.org',
     description: 'A comprehensive digital solution for a non-profit organization focused on women’s health and early pregnancy education, featuring a custom eCommerce system and vibrant branding.',
-    tags: ['Digital App', 'eCommerce', 'Non-Profit', 'Responsive Design', 'Branding'],
+    tags: ['Website Design', 'eCommerce'],
     details: [
-      'Developed a digital app to support women’s health and early pregnancy education initiatives',
+      'Created a vibrant and engaging user interface with wonderful, bright, and fun graphics',
       'Designed and implemented a custom eCommerce system for promotional items and merchandise',
       'Integrated component-based design principles to align with the organization’s branding and mission',
-      'Created a vibrant and engaging user interface with wonderful, bright, and fun graphics',
-      'Built features for news, events, and donations to enhance user engagement and support fundraising efforts',
       'Collaborated with stakeholders to ensure the solution effectively communicated the organization’s goals and values',
     ],
   },
@@ -254,7 +244,7 @@ export const education: TimelineItem[] = [
     date: '2008',
     location: 'Indiana University (Bloomington, IN)',
     title: 'Bachelor of Fine Arts',
-    content: <p>Graphic Design, Photography, Digital Media, Japanese</p>,
+    content: <p>Digital Media, Graphic Design, Photography</p>,
   }
 ];
 
