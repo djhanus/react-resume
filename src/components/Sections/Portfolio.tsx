@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import {FC, memo} from 'react';
 
 import {portfolioItems, SectionId} from '../../data/data';
@@ -27,16 +28,27 @@ const Portfolio: FC = memo(() => {
 Portfolio.displayName = 'Portfolio';
 export default Portfolio;
 
-const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {title, tags, description, details, client, website}}) => {
+const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {title, tags, description, details, client, website, imageSrc}}) => {
   return (
     <div className="flex flex-col gap-y-4 p-4">
+      {/* Image */}
+      {imageSrc && (
+        <div className="relative w-full h-72">
+          <Image
+            alt={title}
+            className="rounded-lg"
+            layout="fill"
+            objectFit="cover"
+            objectPosition="top center"
+            src={imageSrc}
+          />
+        </div>
+      )}
+
       {/* Title */}
       <h2 className="text-2xl font-bold text-white">{title}</h2>
 
       {/* Client */}
-      {/* <span className="text-sm font-medium text-gray-400 italic">{client}</span> */}
-
-      {/* Website */}
       {website && (
         <span className="text-sm font-medium text-gray-400 italic">
           {client}
@@ -45,12 +57,12 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {title, tags, descri
               {' '}
               •{' '}
               <a
-          className="text-blue-400 hover:underline"
-          href={website}
-          rel="noopener noreferrer"
-          target="_blank"
+                className="text-blue-400 hover:underline"
+                href={website}
+                rel="noopener noreferrer"
+                target="_blank"
               >
-          {website}
+                {website}
               </a>
             </>
           )}
@@ -72,12 +84,12 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {title, tags, descri
       {/* Tags */}
       <div className="flex flex-wrap gap-2">
         {tags.map((tag, index) => (
-            <span
+          <span
             className="bg-blue-500 font-medium px-3 py-1 rounded-full text-white text-xs"
             key={index}
-            >
+          >
             {tag}
-            </span>
+          </span>
         ))}
       </div>
     </div>

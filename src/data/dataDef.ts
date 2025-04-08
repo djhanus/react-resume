@@ -83,6 +83,7 @@ export interface PortfolioItem {
   tags: string[];
   details: string[];
   client: string;
+  imageSrc: string | StaticImageData;
 }
 
 /**
