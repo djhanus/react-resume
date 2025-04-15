@@ -15,6 +15,7 @@ import testimonialImage from '../images/landscape-sunset.jpg';
 import almPortfolioImage from '../images/portfolio/alm.png';
 import bhfPortfolioImage from '../images/portfolio/bhf.png';
 import ctkPortfolioImage from '../images/portfolio/ctk.png';
+import doriotPortfolioImage from '../images/portfolio/doriot.png';
 import rhqPortfolioImage from '../images/portfolio/rhq.png';
 import sltPortfolioImage from '../images/portfolio/slt.png';
 // import genericPortfolioImage from '../images/portfolio/portfolio-3.jpg';
@@ -188,6 +189,21 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
+    title: 'Custom Website for Financial Startup',
+    client: 'Doriot VentureStaking™ (2025)',
+    website: 'https://doriot.com',
+    description: 'Designed and developed a bespoke website for a financial startup, showcasing a modern flat design and advanced integrations to drive user engagement and platform buy-in.',
+    tags: ['Front-end Development', 'Startup Landing Page', 'API Integration'],
+    imageSrc: doriotPortfolioImage, // Replace with the appropriate image source
+    details: [
+      'Created a sleek, modern flat design with fully mobile-responsive layouts using Framer',
+      'Developed custom widgets, JavaScript charts, and animations to enhance user experience',
+      'Integrated Airtable API and multiple third-party services to build a seamless purchase workflow',
+      'Implemented blockchain certificate assignment as part of the investment process',
+      'Collaborated with stakeholders to align the design and functionality with the startup’s mission and goals',
+    ],
+  },
+  {
     title: 'Website Design for Community Non-Profit Organization',
     client: 'Bloomington Health Foundation (2018)',
     website: 'https://bloomhf.org',
@@ -214,10 +230,10 @@ export const portfolioItems: PortfolioItem[] = [
     ],
   },
   {
-    title: 'Restaraunt Website Redesign into Gutenberg Blocks',
+    title: 'Restaurant Website Redesign into Gutenberg Blocks',
     client: 'Technology Advice (2024)',
     website: 'https://www.therestauranthq.com',
-    description: 'Redesigned a restaraunt website using the latest WordPress Gutenberg API, focusing on component-based patterns and atomic design principles.',
+    description: 'Redesigned a restaurant website using the latest WordPress Gutenberg API, focusing on component-based patterns and atomic design principles.',
     tags: ['Website Redesign', 'Gutenberg API'],
     imageSrc: rhqPortfolioImage,
     details: [
@@ -227,7 +243,7 @@ export const portfolioItems: PortfolioItem[] = [
     ],
   },
   {
-    title: 'Educational Website for Womens Health Non-Profit',
+    title: 'Educational Website for Women’s Health Non-Profit',
     client: 'Count the Kicks (2022)',
     website: 'https://countthekicks.org',
     description: 'A comprehensive digital solution for a non-profit organization focused on women’s health and early pregnancy education, featuring a custom eCommerce system and vibrant branding.',
@@ -240,19 +256,6 @@ export const portfolioItems: PortfolioItem[] = [
       'Collaborated with stakeholders to ensure the solution effectively communicated the organization’s goals and values',
     ],
   },
-  // {
-  //   title: 'One-Time Passcode Plugin for WordPress',
-  //   client: 'Technology Advice (2024)',
-  //   website: 'https://techrepublic.com',
-  //   description: 'A WordPress plugin for secure OTP-based authentication.',
-  //   tags: ['WordPress Plugin', 'OTP Auth'],
-  //   imageSrc: genericPortfolioImage2,
-  //   details: [
-  //     'Developed a solution for secure one-time passcode (OTP) authentication in WordPress',
-  //     'Prevented fradulent access by implementing a secure OTP system',
-  //     'Integrated with existing WordPress user management and login systems',
-  //   ],
-  // },
   {
     title: 'Website Migration for National Magazine',
     client: 'American Libraries Magazine (2018)',

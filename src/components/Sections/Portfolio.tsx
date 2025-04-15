@@ -10,7 +10,7 @@ const Portfolio: FC = memo(() => {
     <Section className="bg-neutral-800" sectionId={SectionId.Portfolio}>
       <div className="flex flex-col items-center gap-y-8">
         <h2 className="text-3xl font-bold text-white">Featured Projects</h2>
-        <div className="flex flex-col gap-y-6 w-full max-w-3xl">
+        <div className="flex flex-col gap-y-6 w-full max-w-4xl">
           {portfolioItems.map((item, index) => (
             <div
               className="bg-neutral-900 border border-gray-700 p-4 rounded-lg shadow-md"
@@ -33,11 +33,12 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {title, tags, descri
     <div className="flex flex-col gap-y-4 p-4">
       {/* Image */}
       {imageSrc && (
-        <div className="relative w-full h-72">
+        <div className="relative w-full h-fit rounded-lg overflow-hidden">
+          {/* Image */} 
           <Image
             alt={title}
             className="rounded-lg"
-            layout="fill"
+            layout="fit"
             objectFit="cover"
             objectPosition="top center"
             src={imageSrc}
