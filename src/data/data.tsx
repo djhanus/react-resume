@@ -196,9 +196,8 @@ export const portfolioItems: PortfolioItem[] = [
     tags: ['Front-end Development', 'Startup Landing Page', 'API Integration'],
     imageSrc: doriotPortfolioImage, // Replace with the appropriate image source
     details: [
-      'Created a sleek, modern flat design with fully mobile-responsive layouts using Framer',
-      'Developed custom widgets, JavaScript charts, and animations to enhance user experience',
-      'Integrated Airtable API and multiple third-party services to build a seamless purchase workflow',
+      'Framer-powered front-end with custom JavaScript charts and widgets',
+      'Airtable API and third-party tools integrated into a seamless purchase flow',
       'Implemented blockchain certificate assignment as part of the investment process',
       'Collaborated with stakeholders to align the design and functionality with the startup’s mission and goals',
     ],
