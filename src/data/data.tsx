@@ -91,7 +91,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I'm a web developer with 10+ years of experience designing and building custom web applications using the LAMP stack in Wordpress and other similar CMS platforms. Recently, I've been focusing on front-end development with modern JavaScript frameworks like React and Next.js, as well as expanding my expertise in full-stack development and software engineering. I have a passion for creating, building, and collaborating with others. I currently live in a log cabin in Indiana that I get to share with my wife, 2 kids, cats, dog, and rabbits.`,
+  description: `I'm a web developer with 10+ years of experience designing and building custom web applications using the LAMP stack in Wordpress and other similar CMS platforms. Recently, I've been focusing on front-end development with modern JavaScript frameworks like React and Next.js, as well as expanding my expertise in full-stack development and software engineering. I have a passion for creating, building, and collaborating with others. I currently live in a log cabin in Indiana that I get to share with my wife, 2 kids, cats, and dog.`,
   aboutItems: [
     {label: 'Location', text: 'Nashville, IN', Icon: MapIcon},
     {label: 'Age', text: '40', Icon: CalendarIcon},
