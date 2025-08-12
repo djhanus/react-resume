@@ -72,7 +72,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/RESUME_DavidJHanus_WebDeveloper_2025.08.12.pdf',
+      href: '/RESUME_DavidJHanus_WebDeveloper_2025.08.12.pdf', // Update this path to your resume file
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
