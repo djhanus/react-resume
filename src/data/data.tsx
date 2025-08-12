@@ -91,14 +91,14 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I'm a web developer with 10+ years of experience designing and building custom web applications using the LAMP stack in Wordpress and other similar CMS platforms. Recently, I've been focusing on front-end development with modern JavaScript frameworks like React and Next.js, as well as expanding my expertise in full-stack development and software engineering. I have a passion for creating, building, and collaborating with others. I currently live in a log cabin in Indiana that I get to share with my wife, 2 kids, cats, and dog.`,
+  description: `I'm a full-stack developer with 10+ years of experience building web applications, with recent focus on modern JavaScript frameworks like React, Next.js, and TypeScript. My expertise spans the entire development lifecycle—from architecting component-based frontend systems and implementing CI/CD pipelines to deploying cloud-based solutions on AWS. I have deep experience with the full LAMP stack, WordPress development, and CMS platforms, and I'm passionate about creating dynamic web applications using modern frontend frameworks. I thrive in environments where I can contribute to both the development process and collaborate with teams to solve complex technical challenges.`,
   aboutItems: [
-    {label: 'Location', text: 'Nashville, IN', Icon: MapIcon},
+    {label: 'Location', text: 'Nashville, Indiana', Icon: MapIcon},
     {label: 'Age', text: '40', Icon: CalendarIcon},
-    {label: 'Favorite Color', text: 'Pumpkin Orange', Icon: SwatchIcon},
-    {label: 'Favorite Food', text: 'Ramen', Icon: StarIcon},
-    {label: 'Interests', text: 'Videogames, hiking, banjo', Icon: SparklesIcon},
-    {label: 'Favorite Music', text: 'Yacht Rock', Icon: MusicalNoteIcon},
+    {label: 'Favorite Color', text: 'Orange', Icon: SwatchIcon},
+    {label: 'Favorite Food', text: 'Pizza', Icon: StarIcon},
+    {label: 'Interests', text: 'Computers, Hiking, Music', Icon: SparklesIcon},
+    {label: 'Favorite Music', text: 'Heavy Metal', Icon: MusicalNoteIcon},
   ],
 };
 
@@ -202,33 +202,7 @@ export const portfolioItems: PortfolioItem[] = [
       'Collaborated with stakeholders to align the design and functionality with the startup’s mission and goals',
     ],
   },
-  {
-    title: 'Website Design for Community Non-Profit Organization',
-    client: 'Bloomington Health Foundation (2018)',
-    website: 'https://bloomhf.org',
-    description: 'Designed and developed a vibrant WordPress site for a health-focused non-profit, featuring modular components and a seamless donation experience.',
-    tags: ['Website Redesign', 'Front-End Development'],
-    imageSrc: bhfPortfolioImage,
-    details: [
-      'Created a colorful and engaging design aligned with the organization’s branding and mission',
-      'Implemented a secure and user-friendly donation feature to support fundraising efforts',
-      'Collaborated closely with stakeholders to ensure the site effectively communicated the organization’s goals and services',
-    ],
-  },
-  {
-    title: 'Modern Redesign for Conservation Organization',
-    client: 'Sycamore Land Trust (2019)',
-    website: 'https://sycamorelandtrust.org',
-    description: 'A complete redesign of a website, featuring a modern WordPress CMS, full-width responsive design, and a focus on driving donations.',
-    tags: ['Website Redesign', 'Wordpress CMS'],
-    imageSrc: sltPortfolioImage,
-    details: [
-      'Developed a brand-new WordPress CMS with a modern, full-width responsive design',
-      'Built a parks and nature trails index with an interactive map and detailed information for each location',
-      'Optimized the site to drive visitors to the donations page, aligning with the organization’s mission',
-    ],
-  },
-  {
+    {
     title: 'Restaurant Website Redesign into Gutenberg Blocks',
     client: 'Technology Advice (2024)',
     website: 'https://www.therestauranthq.com',
@@ -241,7 +215,20 @@ export const portfolioItems: PortfolioItem[] = [
       'Integrated Google ad tracking and analytics tools for performance monitoring',
     ],
   },
-  {
+    {
+    title: 'Modern Redesign for Conservation Organization',
+    client: 'Sycamore Land Trust (2019)',
+    website: 'https://sycamorelandtrust.org',
+    description: 'A complete redesign of a website, featuring a modern WordPress CMS, full-width responsive design, and a focus on driving donations.',
+    tags: ['Website Redesign', 'Wordpress CMS'],
+    imageSrc: sltPortfolioImage,
+    details: [
+      'Developed a brand-new WordPress CMS with a modern, full-width responsive design',
+      'Built a parks and nature trails index with an interactive map and detailed information for each location',
+      'Optimized the site to drive visitors to the donations page, aligning with the organization’s mission',
+    ],
+  },
+    {
     title: 'Educational Website for Women’s Health Non-Profit',
     client: 'Count the Kicks (2022)',
     website: 'https://countthekicks.org',
@@ -253,6 +240,19 @@ export const portfolioItems: PortfolioItem[] = [
       'Designed and implemented a custom eCommerce system for promotional items and merchandise',
       'Integrated component-based design principles to align with the organization’s branding and mission',
       'Collaborated with stakeholders to ensure the solution effectively communicated the organization’s goals and values',
+    ],
+  },
+  {
+    title: 'Website Design for Community Non-Profit Organization',
+    client: 'Bloomington Health Foundation (2018)',
+    website: 'https://bloomhf.org',
+    description: 'Designed and developed a vibrant WordPress site for a health-focused non-profit, featuring modular components and a seamless donation experience.',
+    tags: ['Website Redesign', 'Front-End Development'],
+    imageSrc: bhfPortfolioImage,
+    details: [
+      'Created a colorful and engaging design aligned with the organization’s branding and mission',
+      'Implemented a secure and user-friendly donation feature to support fundraising efforts',
+      'Collaborated closely with stakeholders to ensure the site effectively communicated the organization’s goals and services',
     ],
   },
   {
