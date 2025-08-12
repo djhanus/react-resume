@@ -401,7 +401,7 @@ export const contact: ContactSection = {
 };
 
 /**
- * Social items 
+ * Social items  
  */
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/djhanus'},
