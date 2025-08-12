@@ -87,7 +87,7 @@ export const heroData: Hero = {
 };
 
 /**
- * About section
+ * About section 
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
